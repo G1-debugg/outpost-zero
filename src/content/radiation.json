@@ -1,0 +1,18 @@
+{
+  "_note": "For the Radiation Passport. Numbers below are from the cited sources. Where sources disagree the conflict is flagged. Agent: show only items with status 'ok' as exact; show others as 'about'.",
+  "comparisons": [
+    { "id": "chestXray", "label": "One chest X-ray", "mSv": 0.1, "status": "ok",
+      "source": "NASA NTRS 20090026571 (astronaut medical X-ray doses)" },
+    { "id": "earthYear", "label": "A year of normal radiation on Earth (average)", "mSv": 2, "status": "conflict",
+      "source": "NASA via ABC News 2024 says about 2 mSv. NASA NTRS 20090026571 uses 3.6 mSv for the US average. Show 'about 2 to 4 mSv'." },
+    { "id": "issSixMonths", "label": "Six months on the ISS", "mSvRange": [80, 160], "status": "ok",
+      "source": "NASA 2017 report as cited by ABC News and STCE. Lower end at solar maximum, higher at solar minimum." },
+    { "id": "issPerDay", "label": "One day on the ISS", "mSvRange": [0.44, 0.88], "status": "derived",
+      "source": "Derived: 80-160 mSv divided by about 182 days. Mark as 'about'." }
+  ],
+  "conflicts": [
+    "ABC News says NASA equates 1 mSv to about 3 chest X-rays. STCE says about 10. With 0.1 mSv per chest X-ray (NASA NTRS), 1 mSv is 10 X-rays. Use the NTRS number and compute.",
+    "NTRS slide says 'one day in space is about 2.5 chest X-rays'. That does not match 80-160 mSv per six months. Do not use it."
+  ],
+  "game": "In-game dose is in 'game units' from 0 to 100, scaled for kids. Always say so on screen."
+}

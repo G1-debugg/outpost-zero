@@ -1,0 +1,18 @@
+{
+  "_note": "Original characters. The child may rename them. Schedules use game hours 0-15.",
+  "crew": [
+    { "id": "asha", "name": "Asha", "job": "Engineer", "color": "teal",
+      "personality": "Calm. Loves fixing things.", "catchphrase": "Let's check the numbers.",
+      "home": "powerBay", "schedule": [ [0, "powerBay"], [6, "lifeSupport"], [12, "powerBay"] ], "usualNeed": "help" },
+    { "id": "kofi", "name": "Kofi", "job": "Medic", "color": "orange",
+      "personality": "Kind. Worries about everyone.", "catchphrase": "Everyone drink some water!",
+      "home": "habitat", "schedule": [ [0, "habitat"], [8, "greenhouse"], [13, "habitat"] ], "usualNeed": "air" },
+    { "id": "mei", "name": "Mei", "job": "Geologist", "color": "yellow",
+      "personality": "Curious. Always collecting rocks.", "catchphrase": "This rock is amazing!",
+      "home": "lab", "schedule": [ [0, "lab"], [9, "airlock"], [11, "lab"] ], "usualNeed": "warm" },
+    { "id": "diego", "name": "Diego", "job": "Rover pilot", "color": "violet",
+      "personality": "Funny. Brave but sometimes careless.", "catchphrase": "What could go wrong?",
+      "home": "commsHub", "schedule": [ [0, "commsHub"], [7, "habitat"], [14, "commsHub"] ], "usualNeed": "light" }
+  ],
+  "needs": ["warm", "light", "air", "help"]
+}

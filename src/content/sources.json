@@ -1,0 +1,17 @@
+{
+  "dataSources": [
+    { "id": "noaa-scales", "name": "NOAA Space Weather Prediction Center: Space Weather Scales", "url": "https://services.swpc.noaa.gov/products/noaa-scales.json", "use": "Today's Storm Level (Calm, Watch, Storm)", "key": false },
+    { "id": "noaa-protons", "name": "NOAA SWPC GOES proton flux", "url": "https://services.swpc.noaa.gov/json/goes/primary/integral-protons-1-day.json", "use": "Backup radiation signal", "key": false },
+    { "id": "noaa-kp", "name": "NOAA SWPC planetary K index", "url": "https://services.swpc.noaa.gov/json/planetary_k_index_1m.json", "use": "Backup geomagnetic signal", "key": false },
+    { "id": "donki", "name": "NASA DONKI (Space Weather Database of Notifications, Knowledge, Information)", "url": "https://api.nasa.gov/DONKI/", "use": "Recent flares, particle events, storms in Field Guide", "key": true },
+    { "id": "horizons", "name": "NASA JPL Horizons", "url": "https://ssd.jpl.nasa.gov/api/horizons.api", "use": "Today's Earth-Mars message delay", "key": false },
+    { "id": "radlab", "name": "NASA OSDR RadLab", "url": "https://visualization.osdr.nasa.gov/radlab/api/", "use": "Real dose rates for Radiation Passport and the Long Night", "key": false }
+  ],
+  "credits": [
+    { "item": "Game code and pixel art", "author": "Our team", "license": "Original work, generated in code" },
+    { "item": "Phaser", "author": "Phaser Studio", "license": "MIT", "url": "https://phaser.io" },
+    { "item": "Pixelify Sans font via @fontsource", "author": "Stefie Justprince", "license": "SIL Open Font License (agent: confirm in the package)", "url": "https://fonts.google.com/specimen/Pixelify+Sans" },
+    { "item": "Mission facts", "author": "NASA, JPL, ISRO, NOAA and reports listed in each research sheet", "license": "Facts only; no text or images copied" }
+  ],
+  "honestyStatement": "Every number labelled LIVE was fetched today. Numbers labelled ARCHIVE were saved earlier and show their date. Dose numbers in the game are scaled game units."
+}

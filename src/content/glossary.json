@@ -1,0 +1,18 @@
+{
+  "_note": "Kid definitions, max 12 words per sentence. Facts checked against research sheets where they apply.",
+  "terms": {
+    "radiation": "Invisible energy. Too much can hurt your body.",
+    "dose": "How much radiation your body has taken in.",
+    "shielding": "Thick walls or water that block radiation.",
+    "solar flare": "A sudden flash of light and energy from the Sun.",
+    "solar storm": "A burst of energy and tiny particles from the Sun.",
+    "regolith": "Loose dust and broken rock on the Moon or Mars.",
+    "sol": "One day on Mars. It is a little longer than an Earth day.",
+    "battery": "A box that stores power for later.",
+    "solar panel": "A flat panel that turns sunlight into power.",
+    "tau": "A number for how dusty the sky is. Higher means darker.",
+    "lunar night": "A night on the Moon. It lasts about 14 Earth days.",
+    "light time": "How long a radio message takes to travel. It moves at the speed of light.",
+    "ice": "Frozen water. We melt it to make drinking water and air."
+  }
+}

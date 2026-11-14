@@ -1,0 +1,52 @@
+{
+  "_note": "Starting guesses. The balance bots (scripts/balance-bots.ts) must tune these. Humans only edit numbers here, never in code.",
+  "clock": { "realSecondsPerGameHour": 15, "shiftHours": 16 },
+  "power": { "batteryMax": 100, "batteryStart": 80, "solarMaxPerHour": 14, "lowWarning": 20, "flickerBelow": 20 },
+  "rooms": {
+    "powerBay":    { "powerDraw": 0, "shield": 1, "alwaysOn": true },
+    "lifeSupport": { "powerDraw": 3, "shield": 1 },
+    "greenhouse":  { "powerDraw": 4, "shield": 0 },
+    "habitat":     { "powerDraw": 3, "shield": 1 },
+    "commsHub":    { "powerDraw": 1, "shield": 1 },
+    "lab":         { "powerDraw": 3, "shield": 0 },
+    "stormShelter":{ "powerDraw": 1, "shield": 5 },
+    "airlock":     { "powerDraw": 1, "shield": 0 }
+  },
+  "machines": {
+    "melter":    { "powerPerHour": 2, "iceToWater": 3, "waterPerHourUsed": 0 },
+    "o2maker":   { "powerPerHour": 4, "waterPerHourUsed": 1, "airPerHour": 4 },
+    "scrubber":  { "powerPerHour": 1, "co2RemovedPerHour": 3 }
+  },
+  "air": { "max": 100, "start": 90, "crewUsePerHourEach": 0.6, "lowWarning": 30, "shelterCrowdMultiplier": 1.5 },
+  "co2": { "max": 100, "crewMakePerHourEach": 0.5, "dizzyAbove": 60 },
+  "eva": { "airlockCycleSeconds": 3, "airlockAirCost": 2, "suitAirMax": 60, "suitAirUsePerSecond": 1.2, "doseAddedPerMinute": 0.3, "rescuePenaltyHours": 1 },
+  "dust": { "panelPenaltyWhenDusty": 0.5, "sweepHoldSeconds": 2, "suitDustDamageIfNotCleaned": 5 },
+  "radiation": {
+    "levels": { "0": 0, "1": 1, "2": 2, "3": 4 },
+    "doseBadgeMax": 100,
+    "doseWarnAt": 40,
+    "evacuateAt": 80,
+    "warningSecondsBeforeEvent": 30,
+    "shieldReducesDosePerPoint": 0.15,
+    "bagAddsShield": 0.5,
+    "bagsNeededPerWall": 4
+  },
+  "spaceWeather": {
+    "_rule": "Storm if S>=1 or G>=3 or R>=3. Watch if G>=2 or R>=2 or Kp>=5. Else Calm.",
+    "storm": { "S": 1, "G": 3, "R": 3 },
+    "watch": { "G": 2, "R": 2, "Kp": 5 },
+    "cacheHours": 3,
+    "missionEffects": {
+      "Calm":  { "radiationEvents": 1, "maxLevel": 1, "warningSeconds": 40 },
+      "Watch": { "radiationEvents": 2, "maxLevel": 2, "warningSeconds": 30 },
+      "Storm": { "radiationEvents": 3, "maxLevel": 3, "warningSeconds": 20 }
+    }
+  },
+  "marsDelay": { "_note": "Real one-way light time shown in minutes; game scales it so the worst case is about 3 game hours.", "maxGameHours": 3, "fallbackMinutes": 12 },
+  "scores": {
+    "safety":     { "rule": "100 minus average crew dose minus 10 per air emergency" },
+    "science":    { "rule": "points for each lab-hour powered and each sample collected" },
+    "resilience": { "rule": "battery and air left at the end, plus repairs done" },
+    "curiosity":  { "rule": "scans completed divided by scans available" }
+  }
+}

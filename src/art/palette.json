@@ -1,0 +1,5 @@
+{
+  "_note": "Original 16-colour palette. Sprites use hex digits 0-9 and a-f as palette indexes; '.' means transparent.",
+  "colors": ["#0b0f1a","#1c2541","#3a506b","#5bc0be","#c9d6df","#ffffff","#f4d35e","#ee964b","#f95738","#8e3b46","#6a994e","#386641","#a98467","#6c584c","#8d99ae","#e0aaff"],
+  "names": ["spaceBlack","navy","steel","teal","lightGrey","white","yellow","orange","red","maroon","green","darkGreen","dust","darkBrown","grey","violet"]
+}
